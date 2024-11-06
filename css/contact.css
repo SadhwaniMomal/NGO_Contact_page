@@ -176,3 +176,39 @@ padding: 12px 10px;
 .map_area{
     margin-top: -115px;
 }
+
+
+.go-top.active {
+    top: 90%;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .go-top {
+    position: fixed;
+    cursor: pointer;
+    top: 0;
+    right: 15px;
+    color: #fff;
+    background-color: red;
+    z-index: 999;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, top 0.3s;
+    border-radius: 50%;
+  }
+  
+  .go-top::before {
+    content: "\f077";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  
+  .fa-chevron-up {
+    font-size: 20px;
+  }
+  
